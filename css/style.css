@@ -1,0 +1,211 @@
+/*  Fonts
+    -----
+    font-family: 'Lato', serif;
+    font-family: 'Ubuntu', sans-serif;
+ */
+ 
+body {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Lato', serif;
+
+}
+
+
+/* =================
+    Typography
+    ================= */
+ 
+.features-title {
+    text-transform: capitalize;
+    font-size: 2.25em;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.features-body, 
+.pricing-body {
+    line-height: 1.5;
+    font-size: 1.5em;
+}
+
+.pricing-title {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    font-weight: bold;
+    padding: 0 2em;
+    font-size: 1.5em;
+    background-color: #ddd;
+}
+
+.pricing-price {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.footer-list-item {
+    text-transform: capitalize;
+    font-size: 1.25rem;
+    
+
+}
+
+.footer-body {
+    font-family: Lato;
+    font-size: .9rem;
+}
+
+
+/* =================
+    Layout
+    ================= */
+ 
+    header {
+        background-color: #f8f8f8 ;
+        padding: 2em 0;
+    }
+   
+    #header-img {
+        width: 100%
+    }
+   
+    .logo {
+        width: 50%;
+        margin: 0 auto;
+        min-width: 400px;
+    }
+
+/* =================
+    Nav
+    ================= */
+ 
+ .nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    
+   
+ }
+
+ .nav-list-item {
+    margin: 0 1em;
+    min-width: 65px;
+   
+ }
+
+ .nav-link {
+    text-decoration: none;
+    color: #707070;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    
+    
+    /* font-size: 1.25rem; */
+ }
+
+ .nav-link:hover, .nav-link:focus {
+    color: #1792d2;
+ }
+
+ #nav-bar {
+     width: 50%;
+     min-width: 400px;
+     margin: 0 auto;
+     
+ }
+
+ .container-features {
+
+ }
+
+@media (min-width: 750px) {
+    header {
+        display: flex;
+        justify-content: center;
+        padding: 1em 0;
+
+        /* flex-direction: column; */
+    }
+    .nav-list {
+        justify-content: flex-end;
+    }
+
+    .nav-list-item {
+        margin: 0 0 0 2em;
+    }
+
+    .logo {
+        width: 40%;
+    }
+}
+
+ 
+
+/* =================
+    Form
+    ================= */
+
+
+.form {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    padding: 2em;
+    justify-content: center;
+
+}
+
+#form {
+    width: 100%;
+    max-width: 400px;
+}
+
+#email,
+.btn {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: inherit;
+    font-size: inherit;
+    width: 100%;
+
+}
+
+
+#email {
+    
+    margin-bottom: 1em;
+    padding: .5em;
+    border-radius: 3px;
+    
+}
+
+#submit {
+    display: inline-block;
+}
+
+.btn{
+  background-color: rgb(240, 226, 101); /* Green */
+  border: none;
+  color: black;
+  padding: 1em 2em;
+  text-align: center;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  transform: scale(1);
+  transition: transform 250ms;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background-color: rgb(104, 105, 5);
+}
+
+
