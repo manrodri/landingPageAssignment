@@ -45,9 +45,9 @@ body {
 .pricing {
     display: flex;
     flex-direction: column;
+    width: 70%;
     
-    text-align: center;
-    margin: 0;
+    margin: 0 auto;
 }
 
 .pricing-link{
@@ -65,16 +65,36 @@ body {
     width: 50%;
 }
 
+footer {
+    background-color: #ddd;
+    padding: 1em 2em;
+    display: flex;
+    flex-direction: column;
+    color: rgba(0,0,0, 0.75)
+
+    
+
+}
+
 .footer-list-item {
     text-transform: capitalize;
     font-size: 1.25rem;
+    color: black;
     
 
 }
 
 .footer-body {
     font-family: Lato;
-    font-size: .9rem;
+    font-size: 1.25rem;
+    text-align: right;
+    margin-top: 0;
+}
+
+@media (min-width: 650px){
+    .pricing {
+        flex-direction: row;
+    }
 }
 
 
@@ -97,12 +117,12 @@ body {
         min-width: 400px;
     }
 
-    .container {
+    /* .container {
         margin: 0 auto;
-    }
+    } */
 
     .features {
-        width: 90%;
+        width: 70%;
         max-width: 900px;
         margin: 0 auto;
        
@@ -130,6 +150,13 @@ body {
         max-width: 200px;
     }
 
+
+ .container-features {
+    display: flex;
+    padding: 3em 0;
+ }
+
+
     .container-features-text {
         padding: 0 1em;
     }
@@ -137,9 +164,10 @@ body {
     .container-pricing {
         border: 1px solid #000;
         border-radius: 3px;
-        width: 50%;
+        width: 70%;
         min-width: 300px;
-        margin: 1em auto;
+        text-align: center;
+        margin: 1em;
     }
 
     .video {
@@ -190,34 +218,7 @@ body {
      
  }
 
- .container-features {
-    display: flex;
-    padding: 3em 0;
- }
-
  
-
-
-@media (min-width: 750px) {
-    header {
-        display: flex;
-        justify-content: center;
-        padding: 1em 0;
-
-        /* flex-direction: column; */
-    }
-    .nav-list {
-        justify-content: flex-end;
-    }
-
-    .nav-list-item {
-        margin: 0 0 0 2em;
-    }
-
-    .logo {
-        width: 40%;
-    }
-}
 
  
 
@@ -227,7 +228,7 @@ body {
 
 
 .form {
-    width: 90%;
+    width: 70%;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -287,3 +288,25 @@ body {
 }
 
 
+
+
+@media (min-width: 650px) {
+    header {
+        display: flex;
+        justify-content: center;
+        padding: 1em 0;
+
+        /* flex-direction: column; */
+    }
+    .nav-list {
+        justify-content: flex-end;
+    }
+
+    .nav-list-item {
+        margin: 0 0 0 2em;
+    }
+
+    .logo {
+        width: 40%;
+    }
+}
